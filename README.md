@@ -40,3 +40,12 @@ http://www.asanoer.com/artikel/asanoer-com-cara-membuat-crud-dengan-ajax-jquery-
 2019-09-01:
 - Menambahkan form create data beserta aksinya, asanoer.com-index-create.php
 - Meregristrasikan modul create tersebut pada asanoer.com-index-modul.php
+
+2019-09-22:
+- Menambahkan modul form update data, asanoer.com-index-update.php
+- Meregristrasikan modul update di atas ke asanoer.com-index-modul.php
+- Sedikit mengubah fungsi JS menuAktip(urlnya), asanoer.com-index.php
+- Memindahkan call fungsi menuAktip(urlnya), asanoer.com-index.php
+
+2019-12-11:
+- Menambahkan fungsi hideAlert() JS otomatis hide, asanoer.com-index.php

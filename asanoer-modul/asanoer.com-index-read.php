@@ -61,9 +61,9 @@ $tb = ASANOER_DB_TABEL_PREFIX."user";
 										?>
 										<tr id="<?php echo $iduser; ?>">
                                             <td>
-                                                <tombol title="Ubah" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></tombol>
-                                                <tombol title="Hapus" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></tombol>
-                                                <tombol title="Cetak" class="btn btn-info btn-xs"><i class="fa fa-print"></i></tombol>
+                                                <tombol klas="asanoer-ubah" title="Ubah" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></tombol>
+                                                <tombol klas="asanoer-hapus" title="Hapus" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></tombol>
+                                                <tombol klas="asanoer-cetak" title="Cetak" class="btn btn-info btn-xs"><i class="fa fa-print"></i></tombol>
                                             </td>
                                             <td><?php echo $iduser;?></td>
                                             <td><?php echo $nameuser;?></td>
@@ -113,8 +113,21 @@ $tb = ASANOER_DB_TABEL_PREFIX."user";
 <script type="text/javascript">
     $(document).ready(function(){
     	//////////// MODAL JS HANDLING
-		$("tombol").click(function(){
-			alert('Maap belum ada\nSilahkan Ikuti Terus Artikel ASANOER.com !!')
+		var id, klas;
+		$('tombol').click(function () {
+			id = $(this).parent().parent().attr('id');
+			klas = $(this).attr('klas');
+			switch(klas){
+				case "asanoer-ubah":
+					location.hash = "#index-update.php?kduser="+id;
+				break;
+				case "asanoer-hapus":
+					alert("Maap, modul ini belum ada,\nsilahkan ikuti terus artikel asanoer.com");
+				break;
+				case "asanoer-cetak":
+					alert("Maap, modul ini belum ada,\nsilahkan ikuti terus artikel asanoer.com");
+				break;
+			}
 		});
         $("title").html('<?php echo(ASANOER_NAMA_APLIKASI)?> | home');
     });

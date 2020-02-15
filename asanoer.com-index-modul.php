@@ -40,7 +40,9 @@ switch ($halaman) {
 		include('asanoer-modul/asanoer.com-index-read.php'); // Modul READ
         break;
 	// Loading Modul UPDATE
-	//////////////////////////////
+	case "index-update.php":
+		include('asanoer-modul/asanoer.com-index-update.php'); // Modul READ
+        break;
 	// Loading Modul DELETE
 	//////////////////////////////
 	// Loading Modul HELP.

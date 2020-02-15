@@ -36,23 +36,33 @@ $(document).ready(function(){
 		cariteks = dtrespon.search("Pesan Kesalahan");
 		if(cariteks>-1) {
 			$("#x-respon").html('<div class=\"alert alert-danger  alert-dismissable\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">TUTUP [x]</button><strong>'+dtrespon+'</strong></div>');
+			hideAlert();
 		}
 		if(dtrespon == "CREATE OKE"){
 			$("#x-respon").html('<div class=\"alert alert-info alert-dismissable\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">TUTUP [x]</button><B>Data Berhasil Dicreate</B></div>');
+			hideAlert();
+			location.hash = $("#asanoerload").attr("loadnya");
+		}
+		if(dtrespon == "UPDATE OKE"){
+			$("#x-respon").html('<div class=\"alert alert-info alert-dismissable\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">TUTUP [x]</button><B>Update User Berhasil</B></div>');
+			hideAlert();
 			location.hash = $("#asanoerload").attr("loadnya");
 		}
 	}
-
+	function hideAlert(){
+		setTimeout(function(){ $(".alert").hide(); }, 5000);
+	}
 	//////////// AJAX UI INDICATOR - LOADING
 	$('.page-loading').hide();
 	$.ajaxSetup({
 		beforeSend:function(){
-			// show gif here, eg:
 			$('#loading-animasi').show();
 		},
 		complete:function(){
-			// hide gif here, eg:
 			$('#loading-animasi').fadeOut('2000');
+			x = window.location; // URL lengkap termasuk Hash
+			lokasiIni = String(x); // Jadikan string
+			menuAktip(lokasiIni);
 		}
 	});
 	
@@ -79,7 +89,7 @@ var x; var lokasiIni;
 	function hashHandler() {
 		x = window.location; // URL lengkap termasuk Hash
 		lokasiIni = String(x); // Jadikan string
-		menuAktip(lokasiIni);
+		//menuAktip(lokasiIni);
 		var pis = lokasiIni.split("#"); // Pisahkan URL di depan Hash dan di belakang
 		//Cek jika undefined
 		if (typeof pis[1] === 'undefined'){
