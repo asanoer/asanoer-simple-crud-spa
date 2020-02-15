@@ -41,10 +41,12 @@ switch ($halaman) {
         break;
 	// Loading Modul UPDATE
 	case "index-update.php":
-		include('asanoer-modul/asanoer.com-index-update.php'); // Modul READ
+		include('asanoer-modul/asanoer.com-index-update.php'); // Modul UPDATE
         break;
 	// Loading Modul DELETE
-	//////////////////////////////
+	case "index-delete.php":
+		include('asanoer-modul/asanoer.com-index-delete.php'); // Modul DELETE
+        break;
 	// Loading Modul HELP.
     case "help-me.php":
 		include('asanoer-modul/asanoer.com-help.php'); // Modul HELP

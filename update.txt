@@ -40,3 +40,7 @@ http://www.asanoer.com/artikel/asanoer-com-cara-membuat-crud-dengan-ajax-jquery-
 
 2019-12-11:
 - Menambahkan fungsi hideAlert() JS otomatis hide, asanoer.com-index.php
+
+2019-12-31:
+- Menambahkan modul / file asanoer.com-index-delete.php.
+- Meregristrasikan modul update tersebut ke asanoer.com-index-modul.php

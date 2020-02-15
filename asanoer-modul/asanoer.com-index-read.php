@@ -122,7 +122,7 @@ $tb = ASANOER_DB_TABEL_PREFIX."user";
 					location.hash = "#index-update.php?kduser="+id;
 				break;
 				case "asanoer-hapus":
-					alert("Maap, modul ini belum ada,\nsilahkan ikuti terus artikel asanoer.com");
+					location.hash = "#index-delete.php?kduser="+id;;
 				break;
 				case "asanoer-cetak":
 					alert("Maap, modul ini belum ada,\nsilahkan ikuti terus artikel asanoer.com");

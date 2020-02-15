@@ -48,6 +48,11 @@ $(document).ready(function(){
 			hideAlert();
 			location.hash = $("#asanoerload").attr("loadnya");
 		}
+		if(dtrespon == "HAPUS OKE"){
+			$("#x-respon").html('<div class=\"alert alert-warning alert-dismissable\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">TUTUP [x]</button><B>Delete User Berhasil</B></div>');
+			hideAlert();
+			location.hash = $("#asanoerload").attr("loadnya");
+		}
 	}
 	function hideAlert(){
 		setTimeout(function(){ $(".alert").hide(); }, 5000);
