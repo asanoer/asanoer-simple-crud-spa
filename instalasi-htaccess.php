@@ -11,7 +11,7 @@ if($langkah == 1 ){
 
 if($langkah == 2 ){
     ?>
-    <meta http-equiv="Refresh" content="2; url=instalasi-htaccess.php?langkah=3" />
+    <meta http-equiv="Refresh" content="0; url=instalasi-htaccess.php?langkah=3" />
     Sedang Mengkonfigurasi file, Tunggu......
     <?php
 }
@@ -29,6 +29,7 @@ if($langkah == 3 ){
             $txt = "### KONFIGURASI YANG SAMA PADA WORDPRESS.\n### UNTUK MENGHILANGKAN INDEX.PHP\nRewriteEngine On\n\n### SILAHKAN EDIT BARIS BERIKUT SESUAIKAN NAMA ROOT FOLDER\nRewriteBase $direktori\n#            <----- root folder ------->\n\n## BARIS BERIKUT JANGAN DI UBAH2\nRewriteRule ^index\.php$ - [L]\nRewriteCond %{REQUEST_FILENAME} !-f\nRewriteCond %{REQUEST_FILENAME} !-d\nRewriteRule . index.php [L]";
             fwrite($myfile, $txt);
             fclose($myfile);
+            sleep(5);
             echo "<strong>----Selesai----</strong><br/><br/><br/><a href='index.php'>Kembali</a>";
         }
     } else {
@@ -36,6 +37,7 @@ if($langkah == 3 ){
             $txt = "### KONFIGURASI YANG SAMA PADA WORDPRESS.\n### UNTUK MENGHILANGKAN INDEX.PHP\nRewriteEngine On\n\n### SILAHKAN EDIT BARIS BERIKUT SESUAIKAN NAMA ROOT FOLDER\nRewriteBase $direktori\n#            <----- root folder ------->\n\n## BARIS BERIKUT JANGAN DI UBAH2\nRewriteRule ^index\.php$ - [L]\nRewriteCond %{REQUEST_FILENAME} !-f\nRewriteCond %{REQUEST_FILENAME} !-d\nRewriteRule . index.php [L]";
             fwrite($myfile, $txt);
             fclose($myfile);
+            sleep(5);
             echo "<strong>----Selesai----</strong><br/><br/><br/><a href='index.php'>Kembali</a>";
     }
 }

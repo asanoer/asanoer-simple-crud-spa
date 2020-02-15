@@ -115,7 +115,8 @@ window.addEventListener('hashchange', hashHandler, false);
 	function menuAktip(urlnya){
 		$('#side-menu li a').removeClass('active');
     	var menu = $("#side-menu li a").filter(function(){
-            return this.href===urlnya;
+            cariteks = urlnya.search(this.href);
+            if(cariteks>-1) { return true } else {return false}
         });
     	menu.addClass('active');
 	}

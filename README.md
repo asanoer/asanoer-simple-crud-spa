@@ -1,5 +1,6 @@
 ASANOER.com SIMPLE CRUD dengan SPA (Single Page Applicarion)
-Silahkan buka website asanoer.com
+
+Atau silahkan buka website https://asanoer.com
 
 Untuk memulai, jangan lupa konfigurasikan akses databse di file asanoer-konfig/asanoer.com-konfig.php
 Buat database dengan nama "asanoer-crudspa" kemudian upload file data.sql ke database tersebut.
@@ -35,3 +36,7 @@ http://www.asanoer.com/artikel/asanoer-com-cara-membuat-crud-dengan-ajax-jquery-
 - Menambah konfirmasi saat data tidak ada asanoer.com-index-read.php
 - Menambah footer lisensi bagian bawah asanoer.com-index.php
 - menambah fasilitas pencarian. menu-nya.php
+
+2019-09-01:
+- Menambahkan form create data beserta aksinya, asanoer.com-index-create.php
+- Meregristrasikan modul create tersebut pada asanoer.com-index-modul.php

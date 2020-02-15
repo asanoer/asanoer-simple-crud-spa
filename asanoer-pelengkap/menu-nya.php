@@ -8,7 +8,7 @@ defined('ASANOER_NAMA_APLIKASI') or exit('Tidak dapat diakses langsung !!!');
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<i class="fa fa-info fa-fw"></i> Menu
                 </button>
-                <a class="navbar-brand" href="<?php echo ASANOER_MAIN_URL.ASANOER_INDEX_APLIKASI; ?>"><strong><img src="<?php echo ASANOER_MAIN_URL.ASANOER_FOLDER_GBR."kopi.jpg"; ?>" width="30px" height="30px"/>
+                <a class="navbar-brand" href="<?php echo ASANOER_MAIN_URL; ?>"><strong><img src="<?php echo ASANOER_MAIN_URL.ASANOER_FOLDER_GBR."kopi.jpg"; ?>" width="30px" height="30px"/>
 				&nbsp;&nbsp;<?php echo ASANOER_NAMA_APLIKASI; ?></strong></a>
             </div>
             <!-- /.navbar-header -->
@@ -58,7 +58,7 @@ defined('ASANOER_NAMA_APLIKASI') or exit('Tidak dapat diakses langsung !!!');
 			     <a href="#help-me.php"><i class="fa fa-info fa-fw"></i> Tentang Demo CRUD ini</a>
 			</li>
 			<li>
-			     <a target="_blank" href="<?php echo ASANOER_MAIN_URL.'my-logger.html'; ?>"><i class="fa fa-database fa-fw"></i> MY Logger</a>
+			     <a href="#my-logger.html"><i class="fa fa-database fa-fw"></i> MY Logger</a>
 			</li>
                     </ul>
                 </div>

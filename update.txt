@@ -1,6 +1,3 @@
-ASANOER.com SIMPLE CRUD dengan SPA (Single Page Applicarion)
-Silahkan buka website asanoer.com
-
 2016-07-27:
 - Penambahan datepicker untuk kolom tanggal lahir.
 - penambahan kolom update histori di help.
@@ -30,3 +27,7 @@ http://www.asanoer.com/artikel/asanoer-com-cara-membuat-crud-dengan-ajax-jquery-
 - Menambah konfirmasi saat data tidak ada asanoer.com-index-read.php
 - Menambah footer lisensi bagian bawah asanoer.com-index.php
 - menambah fasilitas pencarian. menu-nya.php
+
+2019-09-01:
+- Menambahkan form create data beserta aksinya, asanoer.com-index-create.php
+- Meregristrasikan modul create tersebut pada asanoer.com-index-modul.php

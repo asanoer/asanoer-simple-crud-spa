@@ -33,9 +33,7 @@ switch ($halaman) {
 		break;
 	// Loading Modul CREATE
 	case "index-create.php":
-		?>
-		<strong style="color:#b84442">Maaf, untuk halaman ini akan diberikan di Artikel berikutnya..<br/>Silahkan menunggu..!!</strong>
-		<?php
+		include('asanoer-modul/asanoer.com-index-create.php'); // Modul READ
         break;
     // Loading Modul READ
     case "home.php":
